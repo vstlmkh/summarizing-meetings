@@ -1,0 +1,10 @@
+{
+  "skills": ["summarizing-meetings"],
+  "query": "Summarize this Slack thread and pull out what we agreed on",
+  "files": [],
+  "should_trigger": false,
+  "expected_behavior": [
+    "Does not run the three-stage transcript pipeline — there is no ASR transcript to repair",
+    "Summarizes the chat thread directly; may borrow the action-item shape but does not demand an agenda gate"
+  ]
+}

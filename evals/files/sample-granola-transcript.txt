@@ -1,0 +1,15 @@
+Them: uh so is everyone here? can you hear me? yeah ok
+Me: yeah you're coming through fine
+Them: so look billing is a complete damn mess payments keep failing
+Them: failing on ret... on retries yeah when the vendor returns five hundred
+Me: uh-huh. and what is that as a percentage of all transactions
+Them: around [inaudible] percent probably need to check the metric properly
+Me: ok. let me take a look. actually no better let Dan build the prototype on the worker
+Them: yeah ok by next week he frees up around then
+Me: second thing promo codes. are we shipping them this week?
+Them: no no we're not shipping. only after release two point four
+Me: got it. also on e s m fifteen four ten there's a question about migrating legacy orders
+Them: yeah that one is unclear nobody really owns it. needs a separate discussion
+Me: ok let's park it. Anna also confirm the vendor rate limits by the twentieth
+Them: mhm will do
+Me: that's it? that's it. talk later

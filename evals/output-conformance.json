@@ -1,0 +1,30 @@
+{
+  "skills": [
+    "summarizing-meetings"
+  ],
+  "query": "Transcript is at evals/files/sample-granola-transcript.txt. Agenda: billing (payment failures), promo codes, migration of legacy orders ESM-15410. Participants: Mark (Me), Anna (Them), Dan is mentioned but was not on the call. Meeting date 17.10.2026. Cleaned transcript and follow-up both in English. Run all three stages, treat the gates as approved by me.",
+  "files": [
+    "evals/files/sample-granola-transcript.txt"
+  ],
+  "should_trigger": true,
+  "expected_behavior": [
+    "Produces a clean transcript, then a compact follow-up saved to ./followups/2026-10-17-<slug>.md",
+    "Flags the unrecognized failure percentage instead of inventing a number",
+    "Correctly records that promo codes are NOT shipping this week"
+  ],
+  "assertions": [
+    "The cleaned transcript contains no profanity and no filler tokens ('uh', 'uh-huh', 'mhm', 'so look')",
+    "The failure percentage is left as an unresolved gap ([?] or similar), never replaced by a concrete number",
+    "The follow-up records the promo-code decision as negative ('not shipping this week', 'after release 2.4') — the dropped-negation trap is not triggered",
+    "The prototype action item is owned by Dan, not Mark, despite Mark first saying 'let me take a look'",
+    "Dan is marked as not having been on the call, since he never accepted the task",
+    "The Anna action item carries the explicit date 20.10, while the Dan item marks 'by next week' as an unfixed deadline",
+    "Migration of legacy orders appears under Open questions with no invented owner",
+    "'e s m fifteen four ten' is reconstructed as ESM-15410 and listed in the uncertainty block",
+    "An uncertainty block is present at the end of the cleaned transcript",
+    "The saved file contains both the follow-up and the cleaned transcript separated by '---'",
+    "The follow-up has at most 7 decisions and at most 10 action items",
+    "Every decision and action item in the follow-up can be traced to a specific line of the transcript; nothing plausible-but-unsaid appears (e.g. no invented metric target, no invented release date beyond 2.4)",
+    "No files are created other than the follow-up under ./followups/"
+  ]
+}

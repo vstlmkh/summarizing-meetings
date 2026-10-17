@@ -1,0 +1,11 @@
+{
+  "skills": ["summarizing-meetings"],
+  "query": "Here is a Granola transcript from today's call, write me a follow-up",
+  "files": ["evals/files/sample-granola-transcript.txt"],
+  "should_trigger": true,
+  "expected_behavior": [
+    "Does NOT produce a follow-up immediately; starts with Stage 1 and asks for agenda, participants, meeting date and output language",
+    "After the agenda is given, outputs a cleaned transcript first and stops at Gate 2 with an uncertainty block",
+    "Does not create Jira tickets or post anywhere without explicit approval"
+  ]
+}
