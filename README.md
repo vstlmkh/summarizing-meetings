@@ -9,11 +9,13 @@ Conforms to the [Agent Skills open standard](https://agentskills.io/specificatio
 ## Install
 
 ```bash
-ln -s "$PWD" ~/.claude/skills/summarizing-meetings
+git clone git@github.com:vstlmkh/summarizing-meetings.git
+ln -s "$PWD/summarizing-meetings" ~/.claude/skills/summarizing-meetings
 ```
 
-The symlink name must equal the `name` field in `SKILL.md`, which is why it
-differs from this repository's name.
+The symlink name must equal the `name` field in `SKILL.md`. Any agent that reads
+the open-standard `SKILL.md` format can load the skill; the path above is the
+Claude Code location.
 
 ## Three gated stages
 
