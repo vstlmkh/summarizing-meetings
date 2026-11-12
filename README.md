@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vstlmkh/summarizing-meetings/master/assets/banner.svg" alt="summarizing-meetings — raw call transcript to clean record to follow-up" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/summarizing-meetings"><img src="https://img.shields.io/npm/v/summarizing-meetings?color=38bdf8" alt="npm version"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/npm/l/summarizing-meetings?color=a78bfa" alt="MIT license"></a>
+  <a href="https://agentskills.io/specification"><img src="https://img.shields.io/badge/Agent%20Skills-open%20standard-64748b" alt="Agent Skills open standard"></a>
+</p>
+
 # summarizing-meetings
 
 An agent skill that turns a meeting transcript — primarily Granola, but any ASR
@@ -7,6 +17,20 @@ items.
 Conforms to the [Agent Skills open standard](https://agentskills.io/specification).
 
 ## Install
+
+```bash
+npx summarizing-meetings
+```
+
+Copies the skill to `~/.claude/skills/summarizing-meetings` (Claude Code). For
+another agent, point it at that agent's skills directory; `--force` replaces an
+existing install:
+
+```bash
+npx summarizing-meetings --dir ~/.agents/skills --force
+```
+
+Or from source:
 
 ```bash
 git clone git@github.com:vstlmkh/summarizing-meetings.git
@@ -37,6 +61,7 @@ runs all three silently.
 | `SKILL.md` | Workflow and Gotchas (ASR and Granola traps) |
 | `references/transcript-cleanup.md` | Stage 2: ASR failure patterns, reconstruct-or-flag rules |
 | `references/followup-formats.md` | Stage 3: three follow-up presets, file layout |
+| `bin/install.js` | `npx` installer |
 | `evals/` | Trigger and output-conformance scenarios, plus a sample transcript with deliberate traps |
 
 ## Design notes

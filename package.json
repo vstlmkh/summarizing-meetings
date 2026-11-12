@@ -1,0 +1,37 @@
+{
+  "name": "summarizing-meetings",
+  "version": "1.0.0",
+  "description": "Agent skill: turn a raw meeting transcript (Granola, Zoom, Meet, any ASR) into a clean record and a follow-up with action items.",
+  "keywords": [
+    "agent-skill",
+    "claude-code",
+    "claude",
+    "skills",
+    "meeting-notes",
+    "transcript",
+    "granola",
+    "follow-up",
+    "action-items"
+  ],
+  "license": "MIT",
+  "author": "Vladislav Stelmakh",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vstlmkh/summarizing-meetings.git"
+  },
+  "homepage": "https://github.com/vstlmkh/summarizing-meetings#readme",
+  "bugs": "https://github.com/vstlmkh/summarizing-meetings/issues",
+  "bin": {
+    "summarizing-meetings": "bin/install.js"
+  },
+  "files": [
+    "SKILL.md",
+    "references/",
+    "evals/",
+    "assets/banner.svg",
+    "bin/"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="summarizing-meetings — transcript to clean record to follow-up">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="320" rx="24" fill="url(#bg)"/>
+
+  <g font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="72" y="128" font-size="60" font-weight="700" fill="#f8fafc">summarizing-meetings</text>
+    <rect x="72" y="150" width="140" height="6" rx="3" fill="url(#accent)"/>
+    <text x="72" y="204" font-size="22" fill="#cbd5e1">Raw call transcript → clean record → follow-up with action items</text>
+    <text x="72" y="248" font-size="20" fill="#64748b">Agent skill · three gated stages · every claim grounded in a quote</text>
+  </g>
+
+  <!-- pipeline: messy transcript → clean doc → checklist -->
+  <g transform="translate(880 70)" stroke-linecap="round">
+    <rect x="0" y="0" width="84" height="108" rx="10" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <g stroke="#64748b" stroke-width="5">
+      <line x1="14" y1="22" x2="58" y2="22"/><line x1="64" y1="22" x2="70" y2="22"/>
+      <line x1="14" y1="42" x2="34" y2="42"/><line x1="42" y1="42" x2="70" y2="42"/>
+      <line x1="14" y1="62" x2="48" y2="62"/>
+      <line x1="14" y1="82" x2="24" y2="82"/><line x1="32" y1="82" x2="62" y2="82"/>
+    </g>
+    <path d="M98 54 h28 m-10 -10 l10 10 l-10 10" fill="none" stroke="#38bdf8" stroke-width="4"/>
+
+    <rect x="140" y="0" width="84" height="108" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <g stroke="#cbd5e1" stroke-width="5">
+      <line x1="154" y1="22" x2="210" y2="22"/>
+      <line x1="154" y1="42" x2="210" y2="42"/>
+      <line x1="154" y1="62" x2="210" y2="62"/>
+      <line x1="154" y1="82" x2="190" y2="82"/>
+    </g>
+    <path d="M238 54 h28 m-10 -10 l10 10 l-10 10" fill="none" stroke="#a78bfa" stroke-width="4"/>
+
+    <rect x="280" y="0" width="84" height="108" rx="10" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+    <g fill="none" stroke="#a78bfa" stroke-width="4">
+      <path d="M292 24 l5 5 l9 -10"/><path d="M292 54 l5 5 l9 -10"/><path d="M292 84 l5 5 l9 -10"/>
+    </g>
+    <g stroke="#cbd5e1" stroke-width="5">
+      <line x1="318" y1="24" x2="350" y2="24"/>
+      <line x1="318" y1="54" x2="350" y2="54"/>
+      <line x1="318" y1="84" x2="342" y2="84"/>
+    </g>
+  </g>
+  <g font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#94a3b8" text-anchor="middle">
+    <text x="922" y="206">transcript</text>
+    <text x="1062" y="206">clean record</text>
+    <text x="1202" y="206">follow-up</text>
+  </g>
+</svg>
