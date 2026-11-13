@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Copies the skill into an agent's skills directory.
-// Usage: npx summarizing-meetings [--dir <skills-dir>] [--force]
+// Usage: npx @vstlmkh/summarizing-meetings [--dir <skills-dir>] [--force]
 
 const fs = require("node:fs");
 const os = require("node:os");
@@ -25,7 +25,7 @@ function parseArgs(argv) {
 function main() {
   const args = parseArgs(process.argv.slice(2));
   if (args.help) {
-    console.log(`Usage: npx ${SKILL_NAME} [--dir <skills-dir>] [--force]
+    console.log(`Usage: npx @vstlmkh/${SKILL_NAME} [--dir <skills-dir>] [--force]
 
 Installs the skill into <skills-dir>/${SKILL_NAME}.
 Default <skills-dir>: ~/.claude/skills (Claude Code).`);

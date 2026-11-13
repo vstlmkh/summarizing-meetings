@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/summarizing-meetings"><img src="https://img.shields.io/npm/v/summarizing-meetings?color=38bdf8" alt="npm version"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/npm/l/summarizing-meetings?color=a78bfa" alt="MIT license"></a>
+  <a href="https://www.npmjs.com/package/@vstlmkh/summarizing-meetings"><img src="https://img.shields.io/npm/v/@vstlmkh/summarizing-meetings?color=38bdf8" alt="npm version"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/npm/l/@vstlmkh/summarizing-meetings?color=a78bfa" alt="MIT license"></a>
   <a href="https://agentskills.io/specification"><img src="https://img.shields.io/badge/Agent%20Skills-open%20standard-64748b" alt="Agent Skills open standard"></a>
 </p>
 
@@ -19,7 +19,7 @@ Conforms to the [Agent Skills open standard](https://agentskills.io/specificatio
 ## Install
 
 ```bash
-npx summarizing-meetings
+npx @vstlmkh/summarizing-meetings
 ```
 
 Copies the skill to `~/.claude/skills/summarizing-meetings` (Claude Code). For
@@ -27,7 +27,7 @@ another agent, point it at that agent's skills directory; `--force` replaces an
 existing install:
 
 ```bash
-npx summarizing-meetings --dir ~/.agents/skills --force
+npx @vstlmkh/summarizing-meetings --dir ~/.agents/skills --force
 ```
 
 Or from source:
